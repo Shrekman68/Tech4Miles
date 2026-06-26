@@ -1,34 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
-    color: black;
+    background-color: #0d0d0d;
+    color: #ffffff;
 }
+
+/* ── Header ── */
 header {
-    background-color: #f4f4f4;
-    color: black;
-    text-align: center;
-    padding: 1rem 0;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #1f1f1f;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+    color: #ffffff;
+}
+
+header h1 .accent {
+    color: #6EE7B7;
+}
+
+header h2 {
+    display: none;
+}
+
+/* ── Hero ── */
+.hero {
+    padding: 4rem 2rem 3rem;
+    border-bottom: 1px solid #1f1f1f;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #6EE7B7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+}
+
+.hero h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin: 0 0 1rem;
+}
+
+.hero h2 em {
+    color: #6EE7B7;
+    font-style: normal;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    color: #888888;
+    max-width: 480px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── Blog container ── */
 .blog-container {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 0 auto;
 }
-.post-review {
-    background: white;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+/* ── Post list ── */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #1f1f1f;
 }
-.post-review h2 {
-    color: #777;
-    font-size: 0.9rem;
+
+/* ── Post preview card ── */
+.post-preview {
+    background: #0d0d0d;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    text-decoration: none;
+    transition: background 0.15s;
 }
+
+.post-preview:hover {
+    background: #111111;
+}
+
+.post-preview-left {
+    flex: 1;
+}
+
+.post-tag {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #6EE7B7;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+}
+
+.post-preview h2 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 6px;
+}
+
+.post-preview p {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.post-preview-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
 .date {
-    color: #777;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+    color: #444444;
+    white-space: nowrap;
+}
+
+.post-arrow {
+    color: #333333;
+    font-size: 1.1rem;
+}
+
+/* ── Footer ── */
+footer {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 0.75rem;
+    color: #444444;
+    margin: 0;
+}
+
+.footer-badge {
+    font-size: 0.7rem;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #555555;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* ── Post page ── */
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    color: #6EE7B7;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.post-article {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-article h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    margin: 0 0 0.5rem;
+}
+
+.post-article .date {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.post-article p {
+    font-size: 1rem;
+    color: #aaaaaa;
+    line-height: 1.8;
+    margin: 0 0 1.25rem;
 }
