@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+.about {
+    padding: 2.5rem 2rem;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 1.5rem 0;
+    border: 2px solid #6EE7B7;
+}
+
+.about p {
+    font-size: 0.95rem;
+    color: #888888;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.about p:first-child {
+    margin-bottom: 0.75rem;
+}
+
 body {
     font-family: 'Space Grotesk', Arial, sans-serif;
     line-height: 1.6;
@@ -76,6 +102,16 @@ header h2 {
     max-width: 480px;
     line-height: 1.6;
     margin: 0;
+}
+
+nav a {
+    font-size: 0.85rem;
+    color: #888888;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #6EE7B7;
 }
 
 /* ── Blog container ── */
@@ -196,6 +232,13 @@ footer p {
     padding: 3rem 2rem;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.post-article img {
+    height: 50%;
+    width: 50%;
+    border-radius: 8px;
+    margin: 1.5rem 0;
 }
 
 .post-article h2 {
